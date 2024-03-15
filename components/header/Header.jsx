@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import React, { useState , useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import MegaMenu from "./mega-menu/MegaMenu";
 import MegaMenuMobile from "./mega-menu/MegaMenuMobile";
@@ -11,26 +11,21 @@ const Header = () => {
 
   const changeBackground = () => {
     if (typeof window !== "undefined") {
-       if (window.scrollY >= 68) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
+      if (window.scrollY >= 68) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
     }
-    }
-   
   };
 
   useEffect(() => {
-      window.addEventListener("scroll", changeBackground);
-  
+    window.addEventListener("scroll", changeBackground);
+
     return () => {
-        window.removeEventListener("scroll", changeBackground);
-    }
-  }, [])
-  
-
-
-
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
 
   return (
     <>
@@ -43,8 +38,15 @@ const Header = () => {
       >
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo">
-            <Link     href="/">
-              <Image  width="87" height="40" src="/images/logo/deski_01.svg" alt="brand logo" />
+            <Link href="/">
+              <Link href="/">
+                <Image
+                  width="450"
+                  height="180"
+                  src="/images/logo/lange_logo.svg"
+                  alt="brand"
+                />
+              </Link>{" "}
             </Link>
           </div>
           {/* End Logo */}
@@ -61,12 +63,12 @@ const Header = () => {
 
                   <ul className="right-button-group d-flex align-items-center justify-content-center">
                     <li>
-                      <Link     href="/login" className="signIn-action">
+                      <Link href="/login" className="signIn-action">
                         Login
                       </Link>
                     </li>
                     <li>
-                      <Link     href="/signup" className="signUp-action">
+                      <Link href="/signup" className="signUp-action">
                         Get Started
                       </Link>
                     </li>

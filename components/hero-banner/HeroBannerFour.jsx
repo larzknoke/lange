@@ -6,22 +6,28 @@ import Image from "next/image";
 const HeroBannerFour = () => {
   return (
     <div className="hero-banner-four">
-      <Image width="213" height="86"
+      {/* <Image width="213" height="86"
         src="/images/shape/100.svg"
         alt="shape"
         className="shapes shape-four"
-      />
-      <Image width="10" height="19"
+      /> */}
+      <Image
+        width="10"
+        height="19"
         src="/images/shape/101.svg"
         alt="shape"
         className="shapes shape-five"
       />
-      <Image width="242" height="433"
+      <Image
+        width="242"
+        height="433"
         src="/images/shape/102.svg"
         alt="shape"
         className="shapes shape-six"
       />
-      <Image width="246" height="400"
+      <Image
+        width="246"
+        height="400"
         src="/images/shape/103.svg"
         alt="shape"
         className="shapes shape-seven"
@@ -41,16 +47,20 @@ const HeroBannerFour = () => {
               <Image
                 src="/images/assets/ils_14.1.svg"
                 width={83}
-                height = {102}
+                height={102}
                 alt="shape"
                 className="shapes shape-one"
               />
-              <Image width="83" height="98"
+              <Image
+                width="83"
+                height="98"
                 src="/images/assets/ils_14.2.svg"
                 alt="shape"
                 className="shapes shape-two"
               />
-              <Image  width="88" height="107"
+              <Image
+                width="88"
+                height="107"
                 src="/images/assets/ils_14.3.svg"
                 alt="shape"
                 className="shapes shape-three"
@@ -77,7 +87,7 @@ const HeroBannerFour = () => {
                 online ticket.
               </p>
               <Link
-                    href="/login"
+                href="/login"
                 className="theme-btn-five"
                 data-aos="fade-up"
                 data-aos-duration="1200"

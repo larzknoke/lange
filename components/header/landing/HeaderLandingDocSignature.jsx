@@ -53,8 +53,8 @@ const HeaderLandingDocSignature = () => {
           <div className="logo">
             <Link href="/">
               <Image
-                width="138"
-                height="47"
+                width="450"
+                height="180"
                 src="/images/logo/lange_logo.svg"
                 alt="brand"
               />
@@ -98,27 +98,32 @@ const HeaderLandingDocSignature = () => {
                     </div>
                     <div data-to-scrollspy-id="product" className="nav-item">
                       <a href="#product" className="nav-link">
-                        Product
+                        Über uns
                       </a>
                     </div>{" "}
                     <div data-to-scrollspy-id="feature" className="nav-item">
                       <a href="#feature" className="nav-link">
-                        Features
+                        Dämmtechnik
                       </a>
                     </div>
                     <div data-to-scrollspy-id="story" className="nav-item">
                       <a href="#story" className="nav-link">
-                        Stories
+                        Innenraumgestaltung
                       </a>
                     </div>
                     <div data-to-scrollspy-id="pricing" className="nav-item">
                       <a href="#pricing" className="nav-link">
-                        Pricing
+                        Anstrichsysteme
                       </a>
                     </div>
                     <div data-to-scrollspy-id="faq" className="nav-item">
                       <a href="#faq" className="nav-link">
-                        FAQ’s
+                        Fachgeschäft
+                      </a>
+                    </div>
+                    <div data-to-scrollspy-id="faq" className="nav-item">
+                      <a href="#faq" className="nav-link">
+                        Referenzen
                       </a>
                     </div>
                   </div>
@@ -128,7 +133,7 @@ const HeaderLandingDocSignature = () => {
           </nav>
           <div className="right-widget">
             <button className="demo-button" onClick={toggleModalOne}>
-              <span>Request A Demo</span>
+              <span>Kontakt</span>
               <Image
                 width={20}
                 height={20}

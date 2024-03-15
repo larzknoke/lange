@@ -301,6 +301,9 @@ Primary use:  ib-themes
   --blue-light: #8ab5e1;
   --purple-blue: #655c97;
   --vin-red: #973c56;
+  --lange-orange: #f39200;
+  --lange-blue: #0075bf;
+  --lange-blue-light: #8ab5e1;
   scroll-behavior: smooth;
 }
 ::selection {
@@ -7580,7 +7583,8 @@ body .shop-btn-two:hover {
 /*---------------------- Theme Hero Banner/Four ---------------*/
 .hero-banner-four {
   position: relative;
-  background: #fbf3ec;
+  // background: #fbf3ec;
+  background: #fbf8ec;
   padding: 250px 0 110px;
   z-index: 1;
 }
@@ -8572,7 +8576,7 @@ body .shop-btn-two:hover {
   transform: translateY(-50%);
 }
 .theme-menu-five .right-widget .demo-button {
-  width: 210px;
+  width: 150px;
   font-size: 17px;
   line-height: 56px;
   border: 2px solid #000;

@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
 import Link from "next/link";
 import MegaMenu from "./mega-menu/MegaMenu";
@@ -10,30 +10,22 @@ import Image from "next/image";
 const HeaderFour = () => {
   const [navbar, setNavbar] = useState(false);
 
- const changeBackground = () => {
-  if (typeof window !== "undefined") {
-      
+  const changeBackground = () => {
+    if (typeof window !== "undefined") {
       if (window.scrollY >= 68) {
         setNavbar(true);
       } else {
         setNavbar(false);
       }
-  }
-    };
-  useEffect(() => {
-    
-    window.addEventListener("scroll", changeBackground);
-   
-    
-  
-    return () => {
-      
-       window.removeEventListener("scroll", changeBackground);
     }
-  }, [])
-  
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
 
-
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
 
   return (
     <>
@@ -46,9 +38,13 @@ const HeaderFour = () => {
       >
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo">
-            <Link     href="/">
-              <Image width={136} 
-              height={43} src="/images/logo/deski_05.svg" alt="brand logo" />
+            <Link href="/">
+              <Image
+                width="450"
+                height="180"
+                src="/images/logo/lange_logo.svg"
+                alt="brand"
+              />
             </Link>
           </div>
           {/* End Logo */}
@@ -65,13 +61,13 @@ const HeaderFour = () => {
 
                   <ul className="right-button-group d-flex align-items-center justify-content-center">
                     <li>
-                      <Link     href="/login" className="signIn-action">
+                      <Link href="/login" className="signIn-action">
                         Login
                       </Link>
                     </li>
                     <li>
-                      <Link     href="/signup" className="theme-btn-five">
-                        Create your event
+                      <Link href="/signup" className="theme-btn-five">
+                        Kontakt
                       </Link>
                     </li>
                   </ul>
