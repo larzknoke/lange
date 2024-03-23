@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 
 import Header from "../components/header/HeaderFour";
-import HeroBannerFour from "../components/hero-banner/HeroBannerFour";
-import About from "../components/about/About";
-import FeatureNine from "../components/features/FeatureNine";
+import HeroBannerLange from "../components/hero-banner/HeroBannerLange";
+import Fachgeschaeft from "../components/about/Fachgeschaeft";
+import FeatureLange2 from "../components/features/FeatureLange2";
 import Faq from "../components/faq/Faq";
 import PricingThree from "../components/pricing/PricingThree";
 import TestimonialThree from "../components/testimonial/TestimonialThree";
@@ -14,7 +14,7 @@ import CallToActionFive from "../components/call-to-action/CallToActionFive";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Event Organizer || Deski-Saas & Software Nextjs Template",
+  title: "Lange Malermeister || Ovenhausen",
   description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
 };
 
@@ -24,16 +24,16 @@ export default function Home() {
       <Header />
       {/* End HeaderFour */}
 
-      <HeroBannerFour />
-      {/* End Hero Banner Four */}
+      <HeroBannerLange />
+      {/* End Hero Banner Lange */}
 
       {/* 
      =============================================
-				Fancy Text Block
+				Fachgeschäft
 		============================================== */}
       <div className="fancy-text-block-nineteen mt-250 mb-200 md-mt-150 md-mb-150">
         <div className="container">
-          <About />
+          <Fachgeschaeft />
         </div>
       </div>
       {/* End  .fancy-text-block-nineteen*/}
@@ -82,23 +82,71 @@ export default function Home() {
           className="shapes shape-six"
         />
 
+        {/* 
+        =============================================
+            Innenraumgestaltung
+        ============================================== */}
+
         <div className="container">
           <div className="title-style-five text-center mb-60 md-mb-30">
-            <h6>GET STARTED IN MINUTES</h6>
+            <h6 className="text-light">Wir beraten Sie gerne!</h6>
             <h2>
-              <span>3 simple & easy step to launch.</span>
+              <span className="text-light">Innenraumgestaltung</span>
             </h2>
           </div>
           {/* End title */}
-
-          <FeatureNine />
+          <div className="row justify-content-center">
+            <div
+              className="col-lg-5 col-md-8"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div className="text-wrapper pr-4 text-light">
+                <p className="font-rubik text-light mb-4">
+                  Bewährt oder außergewöhnlich, gemütlich oder exklusiv, wir
+                  planen und gestalten Ihre Wohnräume ganz nach Ihren Wünschen.
+                  Vom Bodenbelag bis zum Deckenanstrich sorgen harmonische
+                  Farben, ungewöhnliche Lasuren oder moderne Techniken für einen
+                  bleibenden Eindruck.
+                </p>
+                <h3 className="fs-2 text-light font-slab">
+                  Wählen Sie zwischen:
+                </h3>
+                <ul className="mt-4 list-meta">
+                  <li>Farbigen Anstrichen, glänzend oder matt,</li>
+                  <li>Wischtechniken und Lasuren von ruhig bis bewegt,</li>
+                  <li>Glätttechniken von antik bis modern,</li>
+                  <li>Tapeten von glatt bis strukturiert,</li>
+                  <li>
+                    Bodenbelägen von Korkparkett über Laminat, Linoleum bis
+                    Holzbohlen und
+                  </li>
+                  <li>Teppichböden von strapazierfähig bis luxuriös</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              className="col-lg-7 col-md-8"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <Image
+                width={800}
+                height={500}
+                style={{ objectFit: "contain" }}
+                src={`/images/lange/shape/maler3_blue.svg`}
+                alt="icon"
+              />
+            </div>
+          </div>
+          {/* <FeatureLange2 /> */}
         </div>
       </div>
       {/* /.fancy-feature-nine */}
 
       {/* 
      =============================================
-				Fqa Text Block
+				Stellenanzeige
 		============================================== */}
       <div className="fancy-text-block-six overflow-hidden mt-250 md-mt-200">
         <div className="container">
@@ -109,13 +157,44 @@ export default function Home() {
               data-aos-duration="1200"
             >
               <div className="title-style-five mb-35">
-                <h6>Why choose us</h6>
+                <h6>Bewirb dich jetzt!</h6>
                 <h2>
-                  <span>Why you should</span> choose us?
+                  <span>Wir suchen einen Maler</span> (m/w/d)
                 </h2>
               </div>
               {/* End title */}
-              <Faq />
+              <p className="meta">
+                <strong>Du sieht im Handwerk deine Berufung?</strong>
+              </p>
+              <p className="meta">
+                Du bist motiviert, kreativ, zuverlässig, ehrgeizig, teamfähig
+                und hilfsbereit? Dann bist du bei uns genau richtig!
+              </p>
+              <ul className="mt-4 list-meta list-orange">
+                <li>Aufgabenschwerpunkte: Dämmtechnik und Putztechnik</li>
+                <li>eigener Bulli sowie eigene Baustellen</li>
+                <li>
+                  flexible Arbeitszeiten, somit bleibt Zeit für Hobby und
+                  Familie
+                </li>
+              </ul>
+              <p className="meta">
+                Sollten wir dein Interesse geweckt haben, kannst du dich gerne
+                schriftlich bei uns bewerben oder direkt ein persönliches
+                Gespräch mit uns vereinbaren.
+              </p>
+              <div className="name font-slab my-4 fs-4">
+                Wir freuen uns auf Dich!
+              </div>
+              <Link
+                href="/kontakt"
+                className="theme-btn-five"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
+                Bewirb dich jetzt!{" "}
+              </Link>
+              {/* <Faq /> */}
             </div>
 
             <div
@@ -128,8 +207,9 @@ export default function Home() {
                   width={509}
                   height={633}
                   style={{ height: "fit-content" }}
-                  src="/images/media/img_58.png"
+                  src="/images/lange/stellenanzeige.jpg"
                   alt="media"
+                  className="rounded-1"
                 />
                 <Image
                   width={304}
@@ -144,13 +224,15 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* /.why should you choose us */}
 
       {/* 
      =============================================
 				Pricing Section Three
 		============================================== */}
-      <div className="pricing-section-three mt-250 mb-200 md-mt-150 md-mb-150">
+      <div
+        className="pricing-section-three mt-250 mb-200 md-mt-150 md-mb-150"
+        id="team"
+      >
         <Image
           width={13}
           height={18}
@@ -196,10 +278,10 @@ export default function Home() {
 
         <div className="container">
           <div className="title-style-five text-center mb-50 md-mb-40">
-            <h6>Our Pricing</h6>
+            <h6>das sind wir</h6>
             <div className="row">
               <div className="col-lg-9 m-auto">
-                <h2>Unbeatable prices, no contracts, simple & easy</h2>
+                <h2>Unser Team</h2>
               </div>
             </div>
           </div>
@@ -217,28 +299,24 @@ export default function Home() {
      =============================================
 				Client Feedback Slider
 		============================================== */}
-      <div className="client-feedback-slider-three mb-250 ">
+      <div className="client-feedback-slider-three mb-250 " id="referenzen">
         <div className="container">
           <div className="title-style-five text-center mb-80 md-mb-50">
             <div className="row">
               <div className="col-lg-7 col-md-9 m-auto">
                 <h2 data-aos="fade-up" data-aos-duration="1200">
-                  <span>Check what’s our client </span>say about us.
+                  Unsere <span>Referenzen.</span>
                 </h2>
+                <p className="font-rubik fs-4">
+                  Machen Sie sich selbst ein Bild von unseren Leistungen.
+                </p>
               </div>
             </div>
           </div>
           {/* End title */}
           <div className="row">
-            <div className="col-xl-7 col-lg-9 m-auto">
+            <div className="col-xl-12 col-lg-12 m-auto">
               <div className="testimonial-slider-wrapper">
-                <Image
-                  width={75}
-                  height={54}
-                  src="/images/icon/65.svg"
-                  alt="icon"
-                  className="m-auto"
-                />
                 <div className="clientSliderThree">
                   <TestimonialThree />
                 </div>
@@ -248,7 +326,7 @@ export default function Home() {
           </div>
         </div>
         {/* /.container */}
-        <Image
+        {/* <Image
           width={82}
           height={82}
           src="/images/media/img_59.png"
@@ -289,10 +367,8 @@ export default function Home() {
           src="/images/media/img_64.png"
           alt="media"
           className="shapes shape_6"
-        />
+        /> */}
       </div>
-      {/* /.client-feedback-slider-three */}
-
       <div className="faq-section-four">
         <Image
           width={182}
@@ -332,15 +408,13 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        {/* /.container */}
       </div>
-      {/* End Question and answer */}
 
       {/* 
      =============================================
 			Call To Action
 		============================================== */}
-      <div className="fancy-short-banner-five pt-150 pb-150 md-pt-100 md-pb-100">
+      <div className="fancy-short-banner-five pt-150 pb-150 md-pt-100 md-pb-100 ">
         <div className="container">
           <CallToActionFive />
         </div>

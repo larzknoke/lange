@@ -116,8 +116,8 @@ const HeaderLandingDocSignature = () => {
                         Anstrichsysteme
                       </a>
                     </div>
-                    <div data-to-scrollspy-id="faq" className="nav-item">
-                      <a href="#faq" className="nav-link">
+                    <div data-to-scrollspy-id="laden" className="nav-item">
+                      <a href="#laden" className="nav-link">
                         Fachgeschäft
                       </a>
                     </div>

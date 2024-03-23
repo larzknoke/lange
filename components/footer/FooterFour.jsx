@@ -8,51 +8,39 @@ const linksFooterContent = [
     routePath: "/",
   },
   {
-    itemName: "Product",
-    routePath: "/product-customer-support",
+    itemName: "Dämmtechnik",
+    routePath: "/daemmtechnik",
   },
   {
-    itemName: "Pricing",
-    routePath: "/pricing-pm",
+    itemName: "Innenraumgestaltung",
+    routePath: "/innenraumgestaltung",
   },
   {
-    itemName: "About us",
-    routePath: "/about-pm",
+    itemName: "Anstrichsystem",
+    routePath: "/anstrichsystem",
   },
   {
-    itemName: "Features",
-    routePath: "/solution-management",
+    itemName: "Fachgeschäft",
+    routePath: "/fachgeschäft",
   },
   {
-    itemName: "Blog",
-    routePath: "/blog-v4",
+    itemName: "Referenzen",
+    routePath: "/referenzen",
   },
   {
-    itemName: "Help & Support",
-    routePath: "/login",
-  },
-  {
-    itemName: "API documentation",
-    routePath: "/doc-full-width",
+    itemName: "Team",
+    routePath: "/team",
   },
 ];
 
 const legalFooterContent = [
   {
-    itemName: "Terms of use",
-    routePath: "/terms-conditions",
+    itemName: "Datenschutzerklärung",
+    routePath: "/datenschutzerklärung",
   },
   {
-    itemName: "Terms & conditions",
-    routePath: "/terms-conditions",
-  },
-  {
-    itemName: "Privacy policy",
-    routePath: "/terms-conditions",
-  },
-  {
-    itemName: "Cookie policy",
-    routePath: "",
+    itemName: "Impressum",
+    routePath: "/impressum",
   },
 ];
 
@@ -88,40 +76,37 @@ const FooterFour = () => {
     <div className="row justify-content-end">
       <div className="col-xl-4 col-lg-3 col-12 footer-about-widget">
         <div className="logo">
-          <Link     href="/">
-            <Image width={136} 
-              height={43} src="/images/logo/deski_05.svg" alt="brand" />
+          <Link href="/">
+            <Image
+              width={200}
+              height={80}
+              src="/images/logo/lange_logo.svg"
+              alt="brand"
+            />
           </Link>
         </div>
-        <ul className="font-rubik mt-10">
-          <li>
-            <a href="mailto:deskiinc@gmail.com">deskiinc@gmail.com</a>
-          </li>
-          <li>
-            <a href="tel:+761 412 3224">+761 412 3224</a>
-          </li>
-        </ul>
+        <p className="mt-4 text-black font-rubik">
+          <strong>Jörg Lange GmbH & Co. KG</strong> <br />
+          Vor dem Riepenberg 10 <br />
+          37696 Marienmünster <br />
+        </p>
+        <p className="mt-3 text-black font-rubik">
+          Tel. 05284 - 94420 <br />
+          Fax 05284 - 94421
+        </p>
+        <p className="mt-2 text-black font-rubik">info@lange-malermeister.de</p>
       </div>
       {/* /.footer-list */}
 
+      <div className="col-lg-3 col-md-4 footer-list"></div>
+
+      {/* /.footer-list */}
       <div className="col-lg-3 col-md-4 footer-list">
         <h5 className="footer-title font-slab">Links</h5>
         <ul>
           {linksFooterContent.map((list, i) => (
             <li key={i}>
-              <Link     href={list.routePath}>{list.itemName}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* /.footer-list */}
-      <div className="col-lg-3 col-md-4 footer-list">
-        <h5 className="footer-title font-slab">Legal</h5>
-        <ul>
-          {legalFooterContent.map((list, i) => (
-            <li key={i}>
-              <Link     href={list.routePath}>{list.itemName}</Link>
+              <Link href={list.routePath}>{list.itemName}</Link>
             </li>
           ))}
         </ul>
@@ -129,11 +114,11 @@ const FooterFour = () => {
       {/* /.footer-list */}
 
       <div className="col-xl-2 col-lg-3 col-md-4 footer-list">
-        <h5 className="footer-title font-slab">Products</h5>
+        <h5 className="footer-title font-slab">Rechtliches</h5>
         <ul className="pe-5">
-          {productsFooterContent.map((list, i) => (
+          {legalFooterContent.map((list, i) => (
             <li key={i}>
-              <Link     href={list.routePath}>{list.itemName}</Link>
+              <Link href={list.routePath}>{list.itemName}</Link>
             </li>
           ))}
         </ul>

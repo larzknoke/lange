@@ -433,16 +433,16 @@ const MegaMenu = () => {
       >
         <a
           className={
-            currentTopRoute == "Blogs" ? "nav-link  active" : "nav-link "
+            currentTopRoute == "laden" ? "nav-link  active" : "nav-link "
           }
-          href="#"
+          href="#laden"
+          data-to-scrollspy-id="laden"
           // data-toggle="dropdown"
         >
           Fachgeschäft
         </a>
       </li>
       {/* End li */}
-
       <li
         className={
           currentTopRoute == "Blogs"
@@ -454,10 +454,10 @@ const MegaMenu = () => {
           className={
             currentTopRoute == "Blogs" ? "nav-link  active" : "nav-link "
           }
-          href="#"
-          // data-toggle="dropdown"
+          href="#team"
+          data-to-scrollspy-id="team"
         >
-          Refrenzen
+          Team
         </a>
       </li>
       {/* End li */}
@@ -473,10 +473,10 @@ const MegaMenu = () => {
           className={
             currentTopRoute == "Blogs" ? "nav-link  active" : "nav-link "
           }
-          href="#"
-          // data-toggle="dropdown"
+          href="#referenzen"
+          data-to-scrollspy-id="referenzen"
         >
-          Team
+          Referenzen
         </a>
       </li>
       {/* End li */}

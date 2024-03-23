@@ -1,33 +1,47 @@
-'use client'
-
+"use client";
 
 import React from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function TestimonialThree() {
+  // const settings = {
+  //   dots: false,
+  //   arrow: true,
+  //   infinite: true,
+  //   speed: 900,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: false,
+  //   margin: 30,
+  // };
   const settings = {
-    dots: false,
-    arrow: true,
+    className: "center",
+    centerMode: true,
     infinite: true,
-    speed: 900,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    margin: 30,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    speed: 500,
   };
 
   const TestimonilContent = [
     {
-      desc: ` Having a home based business is a wonderful asset to your life. The problem still stands it comes time advertise your business for a cheap cost. I know you have looked answer everywhere.`,
-      reviewerName: "Jannatul Ekra",
-      designation: "Designer",
+      desc: `Einfamilienhaus in Höxter`,
+      image: `ref1`,
     },
     {
-      desc: `Having a home based business is a wonderful asset to your life. The problem still stands it comes time advertise your business for a cheap cost. I know you have looked answer everywhere.`,
-      reviewerName: "Bostami Hasan",
-      designation: "Front-end Engineer",
+      desc: `Einfamilienhaus in Steinheim`,
+      image: `ref2`,
+    },
+    {
+      desc: `Einfamilienhaus in Höxter`,
+      image: `ref3`,
+    },
+    {
+      desc: `Einfamilienhaus in Steinheim`,
+      image: `ref4`,
     },
   ];
 
@@ -35,15 +49,21 @@ export default function TestimonialThree() {
     <Slider {...settings}>
       {TestimonilContent.map((val, i) => (
         <div
-          className="item"
+          className="item rounded-1"
           key={i}
           data-aos="fade-up"
           data-aos-duration="1200"
           data-aos-delay="100"
         >
-          <p>{val.desc}</p>
-          <h6 className="name">{val.reviewerName}</h6>
-          <span className="desig">{val.designation}</span>
+          <Image
+            width={800}
+            height={250}
+            style={{ objectFit: "contain" }}
+            src={`/images/lange/referenzen/${val.image}.jpg`}
+            alt="Referenzen"
+            className="rounded-1 px-2"
+          />
+          <p className="fs-5">{val.desc}</p>
         </div>
       ))}
     </Slider>

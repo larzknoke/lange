@@ -33,7 +33,7 @@ const FeatureContent = [
   },
   {
     icon: "20",
-    meta: "Smart popups",
+    meta: "Smart popups333",
     subTitle: `Create customized popups and show the message at the lorem`,
     dataDelay: "100",
   },
@@ -52,7 +52,13 @@ const FeatureSix = () => {
         >
           <div className="block-style-five">
             <div className="icon">
-              <Image width={75} height={75} style={{objectFit:'contain'}}     src={`/images/icon/${val.icon}.svg`} alt="icon" />
+              <Image
+                width={75}
+                height={75}
+                style={{ objectFit: "contain" }}
+                src={`/images/icon/${val.icon}.svg`}
+                alt="icon"
+              />
             </div>
             <h6 className="title">
               <span>{val.meta}</span>

@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import FeaturesEight from "../features/FeaturesEight";
+import FeatureLange from "../features/FeatureLange";
 import Image from "next/image";
 
-const HeroBannerFour = () => {
+const HeroBannerLange = () => {
   return (
     <div className="hero-banner-four">
       {/* <Image width="213" height="86"
@@ -38,36 +38,15 @@ const HeroBannerFour = () => {
           <div className="col-lg-6 order-lg-last">
             <div className="illustration-holder">
               <Image
-                src="/images/assets/ils_14.svg"
+                src="/images/lange/Header1.png"
                 alt="shape"
                 className="illustration"
                 width={660}
                 height={471}
               />
-              <Image
-                src="/images/assets/ils_14.1.svg"
-                width={83}
-                height={102}
-                alt="shape"
-                className="shapes shape-one"
-              />
-              <Image
-                width="83"
-                height="98"
-                src="/images/assets/ils_14.2.svg"
-                alt="shape"
-                className="shapes shape-two"
-              />
-              <Image
-                width="88"
-                height="107"
-                src="/images/assets/ils_14.3.svg"
-                alt="shape"
-                className="shapes shape-three"
-              />
             </div>
             <p className="review-text">
-              Over <span>150,000+ client</span> all over the world.
+              Seit mehr als <span>70 Jahren</span> helfen wir Ihnen.
             </p>
           </div>
           {/* End .col */}
@@ -75,7 +54,23 @@ const HeroBannerFour = () => {
           <div className="col-lg-6 order-lg-first">
             <div className="text-wrapper">
               <h1 data-aos="fade-up" data-aos-duration="1200">
-                <span>Event ticket</span> organiser & seller.
+                <span>beraten</span>
+              </h1>
+              <h1
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="200"
+                className="ps-4"
+              >
+                <span>planen</span>
+              </h1>
+              <h1
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="300"
+                className="ps-5"
+              >
+                <span>ausführen</span>
               </h1>
               <p
                 className="sub-text"
@@ -83,18 +78,17 @@ const HeroBannerFour = () => {
                 data-aos-duration="1200"
                 data-aos-delay="100"
               >
-                For hassale free event, we are here to help you by creating
-                online ticket.
+                Regen, Hagel, Schnee, Schmutz – Ihr Haus hat einiges
+                auszuhalten.
               </p>
               <Link
-                href="/login"
+                href="/kontakt"
                 className="theme-btn-five"
                 data-aos="fade-up"
                 data-aos-duration="1200"
-                data-aos-delay="200"
+                data-aos-delay="150"
               >
-                {" "}
-                Let’s get started
+                Kontaktieren Sie uns!
               </Link>
             </div>
             {/* /.text-wrapper */}
@@ -106,7 +100,7 @@ const HeroBannerFour = () => {
       <div className="fancy-feature-eight mt-160 md-mt-100">
         <div className="container">
           <div className="bg-wrapper">
-            <FeaturesEight />
+            <FeatureLange />
           </div>
         </div>
       </div>
@@ -116,4 +110,4 @@ const HeroBannerFour = () => {
   //  {/* /.hero-banner-four */}
 };
 
-export default HeroBannerFour;
+export default HeroBannerLange;

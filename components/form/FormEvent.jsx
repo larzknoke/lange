@@ -1,5 +1,4 @@
-'use client'
-
+"use client";
 
 import React from "react";
 
@@ -9,8 +8,10 @@ const FormEvent = () => {
   };
   return (
     <form onClick={handleSubmit}>
-      <input type="text" placeholder="Email address" />
-      <button>Start Trial</button>
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Email" />
+      <textarea placeholder="Nachricht" />
+      <button>Nachricht absenden</button>
     </form>
   );
 };

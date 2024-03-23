@@ -1,13 +1,14 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React from "react";
 
 const FeatureContent = [
   {
-    icon: "20",
-    meta: "Smart popups",
+    icon: "rolle",
+    meta: "Langzeitschutz",
     subTitle: `Create customized popups and show the message at the lorem`,
     dataDelay: "0",
+    picture: "AnstrichFeature",
   },
   {
     icon: "21",
@@ -36,12 +37,25 @@ const FeatureFour = () => {
         >
           <div className="block-style-five">
             <div className="icon">
-              <Image width={72} height={72} style={{objectFit:'contain'}}     src={`/images/icon/${val.icon}.svg`} alt="icon" />
+              <Image
+                width={72}
+                height={72}
+                style={{ objectFit: "contain" }}
+                src={`/images/lange/icons/${val.icon}.svg`}
+                alt="icon"
+              />
             </div>
             <h6 className="title">
               <span>{val.meta}</span>
             </h6>
             <p>{val.subTitle}</p>
+            <Image
+              width={500}
+              height={750}
+              style={{ objectFit: "contain" }}
+              src={`/images/lange/${val.picture}.jpg`}
+              alt="picture"
+            />
           </div>
         </div>
       ))}

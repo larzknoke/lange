@@ -3,78 +3,93 @@ import React from "react";
 
 const PricingContent = [
   {
-    title: "Free Event",
-    price: "0",
-    priceMeta: "per user/month",
-    packageName: "pc1",
+    title: "Josef Lange",
+    image: "lange_josef",
+    packageName: "pc2",
     skewClass: "skew-right",
     priceList: [
       {
-        list: "60-day chat history",
+        list: "Malermeister",
         listClass: "",
-      },
-      {
-        list: "Basic widget customization",
-        listClass: "",
-      },
-      {
-        list: "Ticketing system",
-        listClass: "disable",
-      },
-      {
-        list: "Data security",
-        listClass: "disable",
       },
     ],
     animatinDelay: "0",
   },
   {
-    title: "Pre Day",
+    title: "Jörg Lange",
+    image: "lange_joerg",
     price: "0.32",
     priceMeta: "per user/month",
     packageName: "pc2",
     skewClass: "skew-left",
     priceList: [
       {
-        list: "60-day chat history",
+        list: "Malermeister",
         listClass: "",
       },
       {
-        list: "Basic widget customization",
+        list: "Gebäudeenergieberater",
         listClass: "",
       },
       {
-        list: "Ticketing system",
+        list: "Betriebswirt des Handwerks",
         listClass: "",
-      },
-      {
-        list: "Data security",
-        listClass: "disable",
       },
     ],
     animatinDelay: "100",
   },
   {
-    title: "Pay As You Go",
+    title: "Christa Weber",
+    image: "weber_christa",
     price: "0.65",
     priceMeta: "per user/month",
-    packageName: "pc3",
+    packageName: "pc2",
     skewClass: "skew-right",
     priceList: [
       {
-        list: "60-day chat history",
+        list: "Kontakt",
         listClass: "",
       },
       {
-        list: "Basic widget customization",
+        list: "Koordination",
         listClass: "",
       },
       {
-        list: "Ticketing system",
+        list: "Verkauf und Beratung",
+        listClass: "",
+      },
+    ],
+    animatinDelay: "200",
+  },
+  {
+    title: "Marion Grote",
+    image: "grote_marion",
+    price: "0.65",
+    priceMeta: "per user/month",
+    packageName: "pc2",
+    skewClass: "skew-right",
+    priceList: [
+      {
+        list: "Rechnungswesen",
         listClass: "",
       },
       {
-        list: "Data security",
+        list: "Verkauf und Beratung",
+        listClass: "",
+      },
+    ],
+    animatinDelay: "200",
+  },
+  {
+    title: "Alexander Rohde",
+    image: "alexander_rohde",
+    price: "0.65",
+    priceMeta: "per user/month",
+    packageName: "pc2",
+    skewClass: "skew-right",
+    priceList: [
+      {
+        list: "Projektleiter",
         listClass: "",
       },
     ],
@@ -93,13 +108,25 @@ const PricingThree = () => {
           data-aos-duration="1200"
           data-aos-delay={item.animatinDelay}
         >
-          <div className={`pr-table-wrapper ${item.skewClass}`}>
+          <div className={`px-5 pr-table-wrapper ${item.skewClass}`}>
             <div className={`pack-name font-slab ${item.packageName}`}>
               <span>{item.title}</span>
             </div>
-            <div className="price font-slab">${item.price}</div>
-            <p className="user-condition">{item.priceMeta}</p>
-            <Image width="321" height="4" src="/images/shape/114.svg" alt="shape" className="line" />
+            <Image
+              width="300"
+              height="320"
+              src={`/images/lange/team/${item.image}.jpg`}
+              style={{ objectFit: "cover" }}
+              alt="team"
+              className="line rounded-1"
+            />
+            <Image
+              width="321"
+              height="4"
+              src="/images/shape/114.svg"
+              alt="shape"
+              className="line"
+            />
             <ul>
               {item.priceList.map((val, i) => (
                 <li className={val.listClass} key={i}>
@@ -108,7 +135,7 @@ const PricingThree = () => {
               ))}
             </ul>
             <a href="#" className="subscribe-btn font-rubik">
-              Subscribe Now
+              Kontakt
             </a>
           </div>
         </div>

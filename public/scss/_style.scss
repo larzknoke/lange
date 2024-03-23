@@ -302,8 +302,11 @@ Primary use:  ib-themes
   --purple-blue: #655c97;
   --vin-red: #973c56;
   --lange-orange: #f39200;
+  --lange-orange-soft: #f0bb6b;
+  --lange-orange-light: #fff8ed;
   --lange-blue: #0075bf;
   --lange-blue-light: #8ab5e1;
+  --lange-blue-light2: #abc3dc;
   scroll-behavior: smooth;
 }
 ::selection {
@@ -7584,7 +7587,7 @@ body .shop-btn-two:hover {
 .hero-banner-four {
   position: relative;
   // background: #fbf3ec;
-  background: #fbf8ec;
+  background: var(--lange-orange-light);
   padding: 250px 0 110px;
   z-index: 1;
 }

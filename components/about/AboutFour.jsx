@@ -27,13 +27,23 @@ const AboutFour = () => {
 
       <div className="col-lg-6" data-aos="fade-left" data-aos-duration="1200">
         <div className="img-holder md-mt-80">
-          <Image width={450} height={560} style={{height:'fit-content'}}     src="/images/media/img_39.png" alt="media" />
-          <Image width={122} height={108}
-            src="/images/shape/60.svg"
+          <Image
+            width={450}
+            height={560}
+            style={{ height: "fit-content" }}
+            src="/images/media/img_39.png"
+            alt="media"
+          />
+          <Image
+            width={122}
+            height={108}
+            src="/images/lange/icons/rolle.svg"
             alt="shape"
             className="shapes shape-one"
           />
-          <Image width={152} height={152}
+          <Image
+            width={152}
+            height={152}
             src="/images/shape/61.svg"
             alt="shape"
             className="shapes shape-two"

@@ -14,7 +14,9 @@ const HeroBannerEleven = () => {
                 Edit & Sign <br /> PDF{" "}
                 <span>
                   documents
-                  <Image width="459" height="38"
+                  <Image
+                    width="459"
+                    height="38"
                     src="/images/shape/line-shape-12.svg"
                     alt="shape"
                     className="cs-screen"
@@ -33,7 +35,13 @@ const HeroBannerEleven = () => {
           {/* End .col-xl-7 */}
 
           <div className="illustration-container">
-            <Image width={868} height={836} style={{height:'fit-content'}}     src="/images/assets/ils-02.png" alt="illustration" />
+            <Image
+              width={868}
+              height={836}
+              style={{ height: "fit-content" }}
+              src="/images/assets/ils-02.png"
+              alt="illustration"
+            />
           </div>
         </div>
         {/* Emd .row */}
@@ -45,7 +53,7 @@ const HeroBannerEleven = () => {
           <div className="row">
             <div className="col-xl-8 col-lg-10 col-md-10 m-auto">
               <p className="text-center text-lg">
-                Join <span>27,000+</span> companies who’ve reached document
+                Join <span>27,0001+</span> companies who’ve reached document
                 workflow with Deski
               </p>
             </div>
