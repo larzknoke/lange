@@ -139,15 +139,15 @@ const HomeDropdown = [
 const Leistungen = [
   {
     name: "Dämmtechnik",
-    routerPath: "/pricing-cs",
+    routerPath: "#",
   },
   {
     name: "Innenraumgestaltung",
-    routerPath: "/pricing-eo",
+    routerPath: "#",
   },
   {
     name: "Anstrichsysteme",
-    routerPath: "/pricing-pm",
+    routerPath: "#",
   },
 ];
 const AboutUs = [
