@@ -9,17 +9,14 @@ import Pricing from "../../../components/pricing/pricing-one/Pricing";
 import CallToActionThree from "../../../components/call-to-action/CallToActionThree";
 import Image from "next/image";
 
-
 export const metadata = {
-    title: 'Pricing Customer Support || Deski-Saas & Software Nextjs Template',
-    description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
-  } 
-
+  title: "Pricing Customer Support || Deski-Saas & Software Nextjs Template",
+  description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
+};
 
 const PricingCustomerSupport = () => {
   return (
     <div className="main-page-wrapper p0">
-    
       {/* End Page SEO Content */}
 
       <HeaderTwo />
@@ -62,12 +59,16 @@ const PricingCustomerSupport = () => {
             <div className="tab-content">
               <Pricing />
             </div>
-            <Image width={187} height={187}
+            <Image
+              width={187}
+              height={187}
               src="/images/shape/64.svg"
               alt="shape"
               className="shapes shape-one"
             />
-            <Image width={196} height={196}
+            <Image
+              width={196}
+              height={196}
               src="/images/shape/65.svg"
               alt="shape"
               className="shapes shape-two"
@@ -83,27 +84,37 @@ const PricingCustomerSupport = () => {
 			==============================================  */}
       <div className="fancy-text-block-seven mt-130 md-mt-80">
         <div className="bg-wrapper no-bg">
-          <Image  width={9} height={9}
+          <Image
+            width={9}
+            height={9}
             src="/images/shape/29.svg"
             alt="shape"
             className="shapes shape-one"
           />
-          <Image width={11} height={11}
+          <Image
+            width={11}
+            height={11}
             src="/images/shape/30.svg"
             alt="shape"
             className="shapes shape-two"
           />
-          <Image  width={8} height={8}
+          <Image
+            width={8}
+            height={8}
             src="/images/shape/31.svg"
             alt="shape"
             className="shapes shape-three"
           />
-          <Image width={17} height={17}
+          <Image
+            width={17}
+            height={17}
             src="/images/shape/32.svg"
             alt="shape"
             className="shapes shape-four"
           />
-          <Image width={8} height={8}
+          <Image
+            width={8}
+            height={8}
             src="/images/shape/33.svg"
             alt="shape"
             className="shapes shape-five"
@@ -116,8 +127,16 @@ const PricingCustomerSupport = () => {
                 data-aos-duration="1200"
               >
                 <div className="img-holder">
-                  <Image width={441} height={550} style={{height:'fit-content'}}     src="/images/media/img_19.png" alt="media" />
-                  <Image width={179} height={179}
+                  <Image
+                    width={441}
+                    height={550}
+                    style={{ height: "fit-content" }}
+                    src="/images/media/img_19.png"
+                    alt="media"
+                  />
+                  <Image
+                    width={179}
+                    height={179}
                     src="/images/shape/34.svg"
                     alt="shape"
                     className="shapes shape-six"
@@ -130,7 +149,13 @@ const PricingCustomerSupport = () => {
                 data-aos-duration="1200"
               >
                 <div className="quote-wrapper pt-60">
-                  <Image width="60" height="43" src="/images/icon/26.svg" alt="icon" className="icon" />
+                  <Image
+                    width="60"
+                    height="43"
+                    src="/images/icon/26.svg"
+                    alt="icon"
+                    className="icon"
+                  />
                   <blockquote className="font-rubik">
                     Deski combines excellent live chat, ticketing and automation
                     that allow us to provide quality.
@@ -170,7 +195,12 @@ const PricingCustomerSupport = () => {
                     Connect deski with the software you
                     <span>
                       use every
-                      <Image width={375} height={44} src="/images/shape/line-shape-2.svg" alt="shape" />
+                      <Image
+                        width={375}
+                        height={44}
+                        src="/images/shape/line-shape-2.svg"
+                        alt="shape"
+                      />
                     </span>
                     day.
                   </h2>
@@ -199,7 +229,7 @@ const PricingCustomerSupport = () => {
       <div className="faq-section">
         <div className="container">
           <div className="title-style-two text-center mb-100 md-mb-80">
-            <p>FAQ</p>
+            <p>FAQ4</p>
             <h2>Question & Answer</h2>
           </div>
           {/* /.title-style-one */}

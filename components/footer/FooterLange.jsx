@@ -9,38 +9,38 @@ const linksFooterContent = [
   },
   {
     itemName: "Dämmtechnik",
-    routePath: "/daemmtechnik",
+    routePath: "#daemmtechnik",
   },
   {
     itemName: "Innenraumgestaltung",
-    routePath: "/innenraumgestaltung",
+    routePath: "#innenraumgestaltung",
   },
   {
     itemName: "Anstrichsystem",
-    routePath: "/anstrichsystem",
+    routePath: "#anstrichsystem",
   },
   {
     itemName: "Fachgeschäft",
-    routePath: "/fachgeschäft",
+    routePath: "#fachgeschäft",
   },
   {
     itemName: "Referenzen",
-    routePath: "/referenzen",
+    routePath: "#referenzen",
   },
   {
     itemName: "Team",
-    routePath: "/team",
+    routePath: "#team",
   },
 ];
 
 const legalFooterContent = [
   {
     itemName: "Datenschutzerklärung",
-    routePath: "/datenschutzerklärung",
+    routePath: "#datenschutzerklärung",
   },
   {
     itemName: "Impressum",
-    routePath: "/impressum",
+    routePath: "#impressum",
   },
 ];
 
@@ -71,7 +71,7 @@ const productsFooterContent = [
   },
 ];
 
-const FooterFour = () => {
+const FooterLange = () => {
   return (
     <div className="row justify-content-end">
       <div className="col-xl-4 col-lg-3 col-12 footer-about-widget">
@@ -94,7 +94,11 @@ const FooterFour = () => {
           Tel. 05284 - 94420 <br />
           Fax 05284 - 94421
         </p>
-        <p className="mt-2 text-black font-rubik">info@lange-malermeister.de</p>
+        <p className="mt-2 text-black font-rubik">
+          <Link href={"mailto:info@lange-malermeister.de"}>
+            info@lange-malermeister.de
+          </Link>
+        </p>
       </div>
       {/* /.footer-list */}
 
@@ -128,4 +132,4 @@ const FooterFour = () => {
   );
 };
 
-export default FooterFour;
+export default FooterLange;

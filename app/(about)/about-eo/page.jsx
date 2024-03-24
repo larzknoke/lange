@@ -7,17 +7,16 @@ import CounterThree from "../../../components/counter/CounterThree";
 import TeamFive from "../../../components/team/TeamFive";
 import Faq from "../../../components/faq/Faq";
 import CallToActionFive from "../../../components/call-to-action/CallToActionFive";
-import FooterFour from "../../../components/footer/FooterFour";
+import FooterLange from "../../../components/footer/FooterLange";
 import BlogStyle5 from "../../../components/blog/BlogStyle5";
 import Image from "next/image";
 export const metadata = {
-    title: 'About Event Organizer || Deski-Saas & Software Nextjs Template',
-    description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
-  } 
+  title: "About Event Organizer || Deski-Saas & Software Nextjs Template",
+  description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
+};
 const EventOrganizer = () => {
   return (
     <div className="main-page-wrapper p0">
-  
       {/* End Page SEO Content */}
 
       <Header />
@@ -27,12 +26,16 @@ const EventOrganizer = () => {
 				Fancy Text block Twenty
 			============================================== */}
       <div className="fancy-text-block-twenty">
-        <Image width={232} height={477}
+        <Image
+          width={232}
+          height={477}
           src="/images/shape/124.svg"
           alt="shape"
           className="shapes shape-one"
         />
-        <Image width={217} height={396}
+        <Image
+          width={217}
+          height={396}
           src="/images/shape/125.svg"
           alt="shape"
           className="shapes shape-two"
@@ -88,12 +91,16 @@ const EventOrganizer = () => {
 				Team Section
 			==============================================  */}
       <div className="team-section-four mt-250 md-mt-150">
-        <Image width={148} height={440}
+        <Image
+          width={148}
+          height={440}
           src="/images/shape/129.svg"
           alt="shape"
           className="shapes shape-one"
         />
-        <Image width={187} height={426}
+        <Image
+          width={187}
+          height={426}
           src="/images/shape/130.svg"
           alt="shape"
           className="shapes shape-two"
@@ -108,7 +115,9 @@ const EventOrganizer = () => {
             <div className="row">
               <TeamFive />
             </div>
-            <Image width={92} height={107}
+            <Image
+              width={92}
+              height={107}
               src="/images/shape/126.svg"
               alt="shape"
               className="shapes shape-one"
@@ -147,8 +156,16 @@ const EventOrganizer = () => {
               data-aos-duration="1200"
             >
               <div className="illustration-holder d-flex justify-content-end md-mt-50">
-                <Image width={509} height={633} style={{height:'fit-content'}} src="/images/media/img_58.png" alt="media" />
-                <Image width={179} height={397}
+                <Image
+                  width={509}
+                  height={633}
+                  style={{ height: "fit-content" }}
+                  src="/images/media/img_58.png"
+                  alt="media"
+                />
+                <Image
+                  width={179}
+                  height={397}
                   src="/images/shape/113.svg"
                   alt="media"
                   className="shapes shape-one"
@@ -196,7 +213,7 @@ const EventOrganizer = () => {
       <footer className="theme-footer-four">
         <div className="top-footer">
           <div className="container">
-            <FooterFour />
+            <FooterLange />
           </div>
           {/* /.container */}
         </div>

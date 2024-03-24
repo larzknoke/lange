@@ -3,16 +3,15 @@ import React from "react";
 import HeaderTwo from "../../../components/header/HeaderFour";
 import ContactAddress from "../../../components/contact/address/ContactAddress";
 import ContactForm from "../../../components/contact/form/ContactForm";
-import FooterFour from "../../../components/footer/FooterFour";
+import FooterLange from "../../../components/footer/FooterLange";
 import Image from "next/image";
 export const metadata = {
-    title: 'Contact Event Organizer || Deski-Saas & Software Nextjs Template',
-    description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
-  } 
+  title: "Contact Event Organizer || Deski-Saas & Software Nextjs Template",
+  description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
+};
 const ContactEventOrganizer = () => {
   return (
     <div className="main-page-wrapper p0">
- 
       {/* End Page SEO Content */}
 
       <HeaderTwo />
@@ -44,12 +43,16 @@ const ContactEventOrganizer = () => {
         <div className="container">
           <div className="contact-info-wrapper">
             <ContactAddress />
-            <Image width={187} height={187}
+            <Image
+              width={187}
+              height={187}
               src="/images/shape/64.svg"
               alt="shape"
               className="shapes shape-one"
             />
-            <Image width={196} height={196}
+            <Image
+              width={196}
+              height={196}
               src="/images/shape/65.svg"
               alt="shape"
               className="shapes shape-two"
@@ -69,7 +72,7 @@ const ContactEventOrganizer = () => {
         <footer className="theme-footer-four mt-200 md-mt-150">
           <div className="top-footer">
             <div className="container">
-              <FooterFour />
+              <FooterLange />
             </div>
             {/* /.container */}
           </div>

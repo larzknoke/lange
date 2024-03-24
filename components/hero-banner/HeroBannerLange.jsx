@@ -82,7 +82,7 @@ const HeroBannerLange = () => {
                 auszuhalten.
               </p>
               <Link
-                href="/kontakt"
+                href="#kontakt"
                 className="theme-btn-five"
                 data-aos="fade-up"
                 data-aos-duration="1200"

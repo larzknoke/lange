@@ -9,23 +9,21 @@ import Faq from "../components/faq/Faq";
 import PricingThree from "../components/pricing/PricingThree";
 import TestimonialThree from "../components/testimonial/TestimonialThree";
 import FaqFour from "../components/faq/FaqFour";
-import FooterFour from "../components/footer/FooterFour";
+import FooterLange from "../components/footer/FooterLange";
 import CallToActionFive from "../components/call-to-action/CallToActionFive";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Lange Malermeister || Ovenhausen",
-  description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
+  title: "Lange Malermeister || Marienmünster",
+  description: "Lange Malermeister || Marienmünster",
 };
 
 export default function Home() {
   return (
     <div className="main-page-wrapper p0">
       <Header />
-      {/* End HeaderFour */}
 
       <HeroBannerLange />
-      {/* End Hero Banner Lange */}
 
       {/* 
      =============================================
@@ -187,7 +185,7 @@ export default function Home() {
                 Wir freuen uns auf Dich!
               </div>
               <Link
-                href="/kontakt"
+                href="#kontakt"
                 className="theme-btn-five"
                 data-aos="fade-up"
                 data-aos-duration="1200"
@@ -307,7 +305,12 @@ export default function Home() {
                 <h2 data-aos="fade-up" data-aos-duration="1200">
                   Unsere <span>Referenzen.</span>
                 </h2>
-                <p className="font-rubik fs-4">
+                <p
+                  className="font-rubik fs-4"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="200"
+                >
                   Machen Sie sich selbst ein Bild von unseren Leistungen.
                 </p>
               </div>
@@ -383,18 +386,50 @@ export default function Home() {
           src="/images/shape/121.svg"
           alt="shape"
           className="shapes shape-two"
+          style={{ zIndex: 999 }}
+        />
+        <Image
+          width={676}
+          height={433}
+          src="/images/lange/shape/maler1orange.svg"
+          alt="shape"
+          className="shapes shape-two"
+          style={{ zIndex: 999, left: "-13%", top: "65%" }}
         />
         <div className="container">
           <div className="title-style-five text-center mb-80 md-mb-60">
-            <h6>FAQ</h6>
-            <h2>
-              <span>Question & Answer</span>
+            <h6>Lange Familienbetrieb seit 1932</h6>
+            <h2 className="text-white">
+              <span>Unsere Geschichte</span>
             </h2>
+            <Image
+              width={780}
+              height={330}
+              src="/images/lange/team/team3.png"
+              alt="Team"
+              className="m-auto my-5"
+            />
           </div>
 
           <div className="row">
-            <div className="col-xl-9 col-lg-10 m-auto">
-              <FaqFour />
+            <div className="col-xl-9 col-lg-10 m-auto text-start">
+              <p className="mb-3">
+                Seit mehr als 70 Jahren helfen wir Ihnen und Ihrer Immobilie
+                dabei, der Witterung zu trotzen. Ob Fachwerk oder Ziegel, ob
+                Erstanstrich oder Renovierung: Wir sind die Spezialisten für
+                ästhetische Fassadengestaltung und effektiven Langzeitschutz.
+              </p>
+              <p className="my-3">
+                Darüber hinaus sorgen modernste Wärmedämmtechniken für geringe
+                Heizkosten. Wir bieten Ihnen von der Wärmeschutzberechnung bis
+                zum fachgerechten Anbringen des Wärmeverbundsystems auf nahezu
+                allen Untergründen die komplette Lösung.
+              </p>
+              <p>
+                Natürlich übernehmen wir auch gerne die harmonische farbliche
+                Gestaltung Ihrer Innenräume. Wir kümmern uns darum, dass aus
+                Ihren vier Wänden ein behagliches Zuhause wird.
+              </p>
             </div>
           </div>
           <div
@@ -402,9 +437,11 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-duration="1200"
           >
-            <h3 className="font-rubik pb-30">Don’t find your answer?</h3>
-            <Link className="theme-btn-five" href="/contact-eo">
-              Contact us
+            <h3 className="font-rubik pb-30">
+              Haben Sie Fragen? Kontaktieren Sie uns gern.
+            </h3>
+            <Link className="theme-btn-five" href="#kontakt">
+              Kontakt
             </Link>
           </div>
         </div>
@@ -419,7 +456,6 @@ export default function Home() {
           <CallToActionFive />
         </div>
       </div>
-      {/* End .fancy-short-banner-five */}
 
       {/* 
      =============================================
@@ -428,29 +464,10 @@ export default function Home() {
       <footer className="theme-footer-four">
         <div className="top-footer">
           <div className="container">
-            <FooterFour />
+            <FooterLange />
           </div>
-          {/* /.container */}
-        </div>
-
-        <div className="container">
-          <div className="bottom-footer-content">
-            <p>
-              Copyright @{new Date().getFullYear()}{" "}
-              <a
-                href="https://themeforest.net/user/ib-themes/portfolio"
-                target="_blank"
-                rel="noreferrer"
-              >
-                ib-themes
-              </a>{" "}
-              inc.
-            </p>
-          </div>
-          {/* /.bottom-footer */}
         </div>
       </footer>
-      {/* /.theme-footer-four */}
     </div>
   );
 }

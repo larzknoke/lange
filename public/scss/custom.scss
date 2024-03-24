@@ -331,3 +331,44 @@ body .theme-btn-five:before {
 .theme-footer-four {
   background: var(--lange-orange-light);
 }
+
+/*-------------HERO 3 COLUMNS-----------*/
+.fancy-feature-eight .bg-wrapper {
+  background: transparent;
+}
+.fancy-feature-eight .bg-wrapper:before {
+  // background: url(../images/shape/97.svg) no-repeat center top;
+  background: none;
+}
+.fancy-feature-eight .bg-wrapper:after {
+  // background: url(../images/shape/98.svg) no-repeat center bottom;
+  background: none;
+}
+
+.hero-banner-four .shape-six {
+  bottom: 2%;
+}
+.hero-banner-four .shape-seven {
+  bottom: 20%;
+}
+
+// #############
+// GESCHICHTE
+// #############
+
+.faq-section-four {
+  background: var(--lange-orange);
+}
+
+.faq-section-four p,
+.faq-section-four h6,
+.faq-section-four h3 {
+  color: white;
+}
+
+.scroll-top {
+  background: var(--lange-blue);
+}
+.scroll-top:hover {
+  background: var(--lange-blue-light);
+}
