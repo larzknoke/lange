@@ -205,7 +205,7 @@ export default function Home() {
                   width={509}
                   height={633}
                   style={{ height: "fit-content" }}
-                  src="/images/lange/stellenanzeige.jpg"
+                  src="/images/lange/Stellenanzeige.jpg"
                   alt="media"
                   className="rounded-1"
                 />
